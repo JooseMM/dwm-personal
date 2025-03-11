@@ -6,18 +6,21 @@ static const unsigned int gappx     = 20;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Fira Code Mono:size=12" };
-static const char dmenufont[]       = "Fira Code Mono:size=12";
-static const char col_gray1[]       = "#282828";
-static const char col_gray2[]       = "#1e2021";
+static const int horizpadbar        = 6;        /* horizontal padding for statusbar */
+static const int vertpadbar         = 6;        /* vertical padding for statusbar */
+
+static const char *fonts[]          = { "InputSansCondensed Nerd Font:size=11" };
+static const char dmenufont[]       = "InputSansCondensed Nerd Font:size=11";
+static const char col_gray1[]       = "#1e2021";
+static const char col_gray2[]       = "#282828";
 static const char col_gray3[]       = "#fbf1c7";
 static const char col_gray4[]       = "#fbf1c7";
 static const char col_cyan[]        = "#504945";
-static const char col_orange[]        = "#fe8019";
+static const char col_lightgray[]        = "#928374";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_orange  },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_lightgray  },
 };
 
 /* tagging */
